@@ -1,3 +1,5 @@
+# Franco Salvador Talarico - 4°3
+# Devuelve la lista de palabras de un string
 def listaPalabras(string):
     longitud = len(string)
     lista_palabras = []

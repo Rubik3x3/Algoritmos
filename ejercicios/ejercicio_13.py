@@ -1,4 +1,6 @@
 """
+Franco Salvador Talarico - 4°3
+
 Escribir un programa que permita al usuario obtener un identificador para cada uno de los socios de un club. 
 Para eso ingresará nombre completo y número de DNI de cada socio, indicando que finalizará el procesamiento mediante el ingreso de un nombre vacío.
 

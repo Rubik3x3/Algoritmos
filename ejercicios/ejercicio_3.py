@@ -1,4 +1,6 @@
 """
+Franco Salvador Talarico - 4°3
+
 Solicitar números al usuario hasta que ingrese el cero. 
 Por cada uno, mostrar la suma de sus dígitos. 
 Al finalizar, mostrar la sumatoria de todos los números ingresados y la suma de sus dígitos. 

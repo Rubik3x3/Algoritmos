@@ -1,3 +1,5 @@
+# Franco Salvador Talarico - 4°3
+# Saber si un DNI es válido o no (tiene 7 u 8 dígitos)
 def validarDNI(dni):
     dni_mod = dni
     digitos = int(0)

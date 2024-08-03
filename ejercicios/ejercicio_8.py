@@ -1,4 +1,6 @@
 """
+Franco Salvador Talarico - 4°3
+
 Solicitar al usuario el ingreso de números primos. 
 La lectura finalizará cuando ingrese un número que no sea primo. 
 Por cada número, mostrar la suma de sus dígitos. 

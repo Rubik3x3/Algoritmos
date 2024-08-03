@@ -1,4 +1,6 @@
 """
+Franco Salvador Talarico - 4°3
+
 Sin ejecutar el siguiente programa, determinar cuál es 
 la salida en pantalla si se ingresan los valores x=6, y=7:
 """
