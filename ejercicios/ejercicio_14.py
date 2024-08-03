@@ -29,7 +29,7 @@ def titulo(string):
     palabra_con_mayuscula = False
     string_modificado = ""
     for i in string:
-        if(i != ' ') and palabra_con_mayuscula == False:
+        if(i.isalpha()) and palabra_con_mayuscula == False:
             siguiente_mayuscula = True
         if(siguiente_mayuscula):
             string_modificado += i.upper()
