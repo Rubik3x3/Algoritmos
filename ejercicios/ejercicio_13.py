@@ -19,8 +19,31 @@ DNI: 25834910
 Alba7258
 """
 
-def generarIdentificador(nombre,dni):
-    pass
+from funciones.listaPalabras import listaPalabras
+from funciones.validarDNI import validarDNI
+from funciones.sumaDigitos import sumaDigitos
+
+def primerosNDigitos(numero,n_digitos):
+    while numero >= 1*(10**n_digitos):
+        numero = numero // 10
+    return numero
+
+def generarIdentificador(nombre_completo,dni):
+    identificador = ""
+    primer_nombre = listaPalabras(nombre_completo)[0]
+    apellido = ""
+    if(len(listaPalabras(nombre_completo)) == 2):
+        apellido = listaPalabras(nombre_completo)[1]
+    elif(len(listaPalabras(nombre_completo)) == 3):
+        segundo_nombre = listaPalabras(nombre_completo)[1]
+        apellido = listaPalabras(nombre_completo)[2]       
+    identificador += primer_nombre
+    letras_apellido = str(len(apellido))
+    identificador += letras_apellido
+    dni3 = primerosNDigitos(dni,3)
+    identificador += str(dni3)
+
+    return identificador
 
 nombre_completo = str(input("Ingrese el nombre completo: "))
 dni = int(input("Ingrese el DNI: "))
