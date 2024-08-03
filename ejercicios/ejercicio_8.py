@@ -17,16 +17,17 @@ mayor = int(0)
 
 while(numero != 0):
     numero = int(input("Ingrese un número primo: "))
-    if(numero == 0):
+    if(numero != 0):
+        if(esPrimo(numero) == False):
+            print("El número No es primo.")
+            break
+        print(f'La suma de los dígitos de {numero} es {sumaDigitos(numero)}.')
+        digito = int(input("Ingrese un dígito: "))
+        print(f'La ocurrencia del dígito {digito} en el número {numero} es {ocurrenciaDigito(numero,digito)}')
+        if(numero > mayor):
+            mayor = numero
+    else:
         break
-    if(esPrimo(numero) == False):
-        print("El número No es primo.")
-        break
-    print(f'La suma de los dígitos de {numero} es {sumaDigitos(numero)}.')
-    digito = int(input("Ingrese un dígito: "))
-    print(f'La ocurrencia del dígito {digito} en el número {numero} es {ocurrenciaDigito(numero,digito)}')
-    if(numero > mayor):
-        mayor = numero
 
 print(f"Número mayor ingresado: {mayor}.")
 print(f"Factorial de {mayor} es {factorial(mayor)}")
