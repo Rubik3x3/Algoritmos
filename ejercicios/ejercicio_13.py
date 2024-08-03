@@ -45,7 +45,16 @@ def generarIdentificador(nombre_completo,dni):
 
     return identificador
 
-nombre_completo = str(input("Ingrese el nombre completo: "))
-dni = int(input("Ingrese el DNI: "))
 
-print(generarIdentificador(nombre_completo,dni))
+nombre_completo = " "
+
+while(nombre_completo != ""):
+    nombre_completo = str(input("Ingrese el nombre completo: "))
+    if(nombre_completo == ""):
+        break
+    dni = int(input("Ingrese el DNI: "))
+
+    while(validarDNI(dni) == False):
+        dni = int(input("Ingrese un correcto DNI: "))
+
+    print(generarIdentificador(nombre_completo,dni))
