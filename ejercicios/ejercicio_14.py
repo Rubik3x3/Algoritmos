@@ -8,7 +8,23 @@ inalterados los demás caracteres. Precondición: el separador de palabras es el
 Agregar doctests con suficientes casos de prueba para validar que la función 
 retorna el valor esperado ante distintos argumentos.
 """
+
+import doctest
+
 def titulo(string):
+    """
+    Ejemplos:
+    >>> titulo("hola como estas")
+    'Hola Como Estas'
+    >>> titulo("hola   mundo ")
+    'Hola   Mundo '
+    >>> titulo(" este es un texto")
+    ' Este Es Un Texto'
+    >>> titulo("me gusta python")
+    'Me Gusta Python'
+    >>> titulo("hol")
+    'Hol'
+    """
     siguiente_mayuscula = True
     palabra_con_mayuscula = False
     string_modificado = ""
@@ -24,6 +40,8 @@ def titulo(string):
         if(i == ' '):
             palabra_con_mayuscula = False
     return string_modificado
+
+doctest.testmod()
 
 texto = str(input("Ingrese un texto: "))
 
