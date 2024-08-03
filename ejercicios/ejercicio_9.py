@@ -21,6 +21,7 @@ print(x," . ",y)
 RESPUESTA:
 
 Pasos:
+-
 - INICIO
 - Se ingresa x=6
 - Se ingresa y=7
@@ -52,9 +53,11 @@ Pasos:
 --- Siguientes instrucciones:
 ---- x=x+1 -> x=9
 ---- y=y+1 -> y=10
+-
 - Mostrar 'x . y'
 - [ x=9 y=10 ]
 - Muestra '9 . 10'
 - FIN
---
+-
+- VERIFICADO
 """
